@@ -12,7 +12,7 @@ This was built and tested with Google Drive only, however it should work with ot
 
 1. SSH or Log into your Proxmox host. Install rclone with `apt-get update;apt-get install rclone;`.
 Setup an rclone remote and encrypt that remote if so desired. Further information on configuring rclone can be found here:
- - Adding google drive to rclone: https://rclone.org/drive/
+ - Adding onedrive to rclone: [https://rclone.org/drive/](https://rclone.org/onedrive/)
  - Encryping your rclone contents: https://rclone.org/crypt/
 
 When setting up the encryption, I DO NOT reccomend you encrypt the filenames and directory names. Doing so will break the ability to easily pull down backups from the remmote.
