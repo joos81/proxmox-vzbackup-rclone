@@ -32,6 +32,13 @@ chmod +x /root/proxmox-vzbackup-rclone/vzbackup-rclone.sh
 script:/root/proxmox-vzbackup-rclone/vzbackup-rclone.sh
 ```
 
+Or set a script per backup job
+pvesh set /cluster/backup/backup-660f0b11-3e29 --script /root/vzbackup-rclone.sh
+
+pvesh set /cluster/backup/backup-61fb866a-eee3 --script /root/proxmox-vzbackup-hostonly.sh
+
+Backup ID's are in /etc/pve/jobs.cfg
+
 5. You're finished. Kicking off a manual or scheduled backup will automatically trigger the rclone backup. To verify this, you can kickoff a manual backup and watch the proxmox console log output.
 
 ### Example webui console output from a successful vzbackup run:
